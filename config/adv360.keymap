@@ -29,8 +29,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <3 2>;
+            then-layer = <4>;
         };
     };
 
@@ -69,11 +69,11 @@
 
         left_layer {
             bindings = <
-&trans  &trans        &trans          &trans         &trans    &trans     &trans                                      &trans  &trans     &trans     &trans          &trans           &trans         &trans
-&trans  &kp EXCL      &kp AT          &kp HASH       &kp DLLR  &kp PRCNT  &trans                                      &trans  &kp CARET  &kp AMPS   &kp ASTRK       &kp GRAVE        &kp TILDE      &trans
-&trans  &ht LALT DQT  &ht LCTRL LBKT  &ht LGUI LBRC  &kp LPAR  &kp LT     &trans  &trans  &trans      &trans  &trans  &trans  &kp FSLH   &kp MINUS  &ht RGUI EQUAL  &ht RCTRL COLON  &ht RALT SEMI  &trans
-&trans  &kp SQT       &kp RBKT        &kp RBRC       &kp RPAR  &kp GT                     &trans      &trans                  &kp BSLH   &kp UNDER  &kp PLUS        &kp PIPE         &kp QMARK      &trans
-&trans  &trans        &trans          &trans         &trans               &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans          &trans           &trans         &trans
+&trans  &trans             &trans    &trans    &trans    &trans     &trans                                      &trans  &trans     &trans     &trans          &trans           &trans         &trans
+&trans  &kp EXCL           &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &trans                                      &trans  &kp CARET  &kp AMPS   &kp ASTRK       &kp GRAVE        &kp TILDE      &trans
+&trans  &kp DOUBLE_QUOTES  &kp LBKT  &kp LBRC  &kp LPAR  &kp LT     &trans  &trans  &trans      &trans  &trans  &trans  &kp FSLH   &kp MINUS  &ht RGUI EQUAL  &ht RCTRL COLON  &ht RALT SEMI  &trans
+&trans  &kp SQT            &kp RBKT  &kp RBRC  &kp RPAR  &kp GT                     &trans      &trans                  &kp BSLH   &kp UNDER  &kp PLUS        &kp PIPE         &kp QMARK      &trans
+&trans  &trans             &trans    &trans    &trans               &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans          &trans           &trans         &trans
             >;
         };
 
