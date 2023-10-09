@@ -113,11 +113,11 @@
 
         game_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &kp 6                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESC    &kp LSHIFT  &kp A     &kp S     &kp D   &kp F   &kp G      &kp M    &kp I       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LALT   &kp LCTRL   &kp Z     &kp X     &kp C   &kp V                       &kp H       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&none      &none       &kp CAPS  &kp LEFT  &kp B           &kp SPACE  &kp TAB  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &kp 6                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp LSHIFT  &kp A     &kp S     &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LALT   &kp LCTRL   &kp Z     &kp X     &kp C   &kp V                       &kp H      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&none      &none       &kp CAPS  &kp LEFT  &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
