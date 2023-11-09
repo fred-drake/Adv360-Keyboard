@@ -31,7 +31,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
             hold-trigger-on-release;
         };
@@ -43,7 +43,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <36 52 65 66 67 37 38 53 68 69 70 35 7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75>;
             hold-trigger-on-release;
         };
@@ -63,31 +63,31 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1           &kp N2        &kp N3           &kp N4             &kp N5  &kp LG(LC(LS(N4)))                                                      &none      &kp N6  &kp N7              &kp N8            &kp N9                &kp N0                    &to SUD
-&kp TAB    &kp Q            &kp W         &kp E            &kp R              &kp T   &none                                                                   &none      &kp Y   &kp U               &kp I             &kp O                 &kp P                     &to WIN
-&kp LCTRL  &hml LEFT_ALT A  &hml LCTRL S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G   &none               &none        &none         &none     &none          &none      &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT BACKSPACE  &kp ENTER
-&kp LSHFT  &kp Z            &kp X         &kp C            &kp V              &kp B                                    &none         &none                               &kp N   &kp M               &kp COMMA         &kp DOT               &kp RALT                  &kp ENTER
-&none      &none            &none         &none            &none                      &kp LGUI            &lt LEF TAB  &kp LALT      &kp RALT  &lt RIG SPACE  &kp SPACE          &none               &none             &none                 &none                     &none
+&none  &kp N1           &kp N2        &kp N3           &kp N4             &kp N5  &none                                                     &none      &kp N6  &kp N7              &kp N8            &kp N9                &kp N0                    &to SUD
+&none  &kp Q            &kp W         &kp E            &kp R              &kp T   &none                                                     &none      &kp Y   &kp U               &kp I             &kp O                 &kp P                     &to WIN
+&none  &hml LEFT_ALT A  &hml LCTRL S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G   &none  &none        &none      &none      &none           &none      &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT BACKSPACE  &none
+&none  &kp Z            &kp X         &kp C            &kp V              &kp B                       &none      &none                                 &kp N   &kp M               &kp COMMA         &kp DOT               &kp RALT                  &none
+&none  &none            &none         &none            &none                      &none  &lt LEF TAB  &none      &kp ENTER  &lt RIG ESCAPE  &kp SPACE          &none               &none             &none                 &none                     &none
             >;
         };
 
         windows_layer {
             bindings = <
-&trans    &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &trans
-&trans    &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &to MAC
-&kp LGUI  &trans  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &trans  &trans
-&trans    &trans  &trans           &trans               &trans  &trans                     &trans      &trans                  &trans  &trans  &trans                &trans            &trans  &trans
-&trans    &trans  &trans           &trans               &trans          &kp LCTRL  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans            &trans  &none
+&trans  &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &trans
+&trans  &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &to MAC
+&none   &trans  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &trans  &trans
+&trans  &trans  &trans           &trans               &trans  &trans                     &trans      &trans                  &trans  &trans  &trans                &trans            &trans  &trans
+&trans  &trans  &trans           &trans               &trans          &kp LCTRL  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans            &trans  &none
             >;
         };
 
         right_layer {
             bindings = <
-&trans  &trans            &trans                &trans            &trans              &trans  &trans                                      &trans  &trans     &trans                   &trans          &trans                    &trans              &trans
-&trans  &kp N6            &kp N7                &kp N8            &kp N9              &kp N0  &trans                                      &trans  &kp PG_UP  &kp HOME                 &kp UP          &kp END                   &trans              &trans
-&trans  &hml LEFT_ALT N1  &hml LEFT_CONTROL N2  &hml LEFT_GUI N3  &hml LEFT_SHIFT N4  &kp N5  &trans  &trans  &trans      &trans  &trans  &trans  &kp PG_DN  &hmr RIGHT_SHIFT INSERT  &kp RIGHT_GUI   &hmr RIGHT_CONTROL PSCRN  &hmr RIGHT_ALT DEL  &trans
-&trans  &trans            &trans                &trans            &trans              &trans                  &trans      &trans                  &trans     &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW           &trans              &trans
-&trans  &trans            &trans                &trans            &trans                      &trans  &trans  &trans      &trans  &trans  &trans             &trans                   &trans          &trans                    &trans              &to GME
+&trans  &trans            &trans                &trans            &trans              &trans  &trans                                      &trans  &trans     &trans                 &trans                       &trans                  &trans              &trans
+&trans  &none             &none                 &none             &none               &none   &trans                                      &trans  &kp PG_UP  &kp INSERT             &none                        &kp PRINTSCREEN         &trans              &trans
+&trans  &hml LEFT_ALT N1  &hml LEFT_CONTROL N2  &hml LEFT_GUI N3  &hml LEFT_SHIFT N4  &kp N5  &trans  &trans  &trans      &trans  &trans  &none   &kp PG_DN  &hmr RIGHT_SHIFT HOME  &hmr RIGHT_COMMAND UP_ARROW  &hmr RIGHT_CONTROL END  &hmr RIGHT_ALT DEL  &trans
+&trans  &kp N6            &kp N7                &kp N8            &kp N9              &kp N0                  &trans      &trans                  &none      &kp LEFT_ARROW         &kp DOWN_ARROW               &kp RIGHT_ARROW         &none               &trans
+&trans  &trans            &trans                &trans            &trans                      &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans                       &trans                  &trans              &to GME
             >;
         };
 
@@ -103,17 +103,17 @@
 
         tri_layer {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans        &trans                                      &trans  &trans        &trans         &trans        &trans      &trans  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &trans                                      &trans  &bt BT_SEL 3  &trans         &kp C_VOL_UP  &kp C_NEXT  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1  &trans  &trans  &trans      &trans  &trans  &trans  &bt BT_SEL 4  &kp C_BRI_UP   &kp C_MUTE    &kp C_PP    &trans  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2                  &trans      &trans                  &bt BT_CLR    &kp C_BRI_DEC  &kp C_VOL_DN  &kp C_PREV  &trans  &trans
-&trans  &trans  &trans   &trans   &trans                 &trans  &trans  &trans      &trans  &trans  &trans                &trans         &trans        &trans      &trans  &trans
+&trans  &trans  &trans   &trans   &trans   &trans        &kp LS(LC(LG(N4)))                                      &trans  &trans        &trans         &trans        &trans      &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0  &trans                                                  &trans  &bt BT_SEL 3  &trans         &kp C_VOL_UP  &kp C_NEXT  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1  &trans              &trans  &trans      &trans  &trans  &trans  &bt BT_SEL 4  &kp C_BRI_UP   &kp C_MUTE    &kp C_PP    &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &bt BT_SEL 2                              &trans      &trans                  &bt BT_CLR    &kp C_BRI_DEC  &kp C_VOL_DN  &kp C_PREV  &trans  &trans
+&trans  &trans  &trans   &trans   &trans                 &trans              &trans  &trans      &trans  &trans  &trans                &trans         &trans        &trans      &trans  &trans
             >;
         };
 
         game_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &kp 6                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &none                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp LSHIFT  &kp A     &kp S     &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LALT   &kp LCTRL   &kp Z     &kp X     &kp C   &kp V                       &kp H      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -124,7 +124,7 @@
         sudoku_layer {
             bindings = <
 &none  &none  &none   &none   &none   &none   &none                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none  &kp N7  &kp N8  &kp N9  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &kp N7  &kp N8  &kp N9  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &to 0
 &none  &none  &kp N4  &kp N5  &kp N6  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none  &kp N1  &kp N2  &kp N3  &trans                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none  &none   &none   &none           &kp LSHFT  &kp LCTRL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &to MAC
