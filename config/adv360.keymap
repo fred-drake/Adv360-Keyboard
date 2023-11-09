@@ -84,11 +84,11 @@
 
         left_layer {
             bindings = <
-&trans  &trans                       &trans                          &trans                    &trans                            &trans     &trans                                      &trans  &trans     &trans                  &trans     &trans     &trans     &trans
-&trans  &kp EXCL                     &kp AT                          &kp HASH                  &kp DLLR                          &kp PRCNT  &trans                                      &trans  &kp CARET  &kp AMPS                &kp ASTRK  &kp GRAVE  &kp TILDE  &trans
-&trans  &hml LEFT_ALT DOUBLE_QUOTES  &hml LEFT_CONTROL LEFT_BRACKET  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_SHIFT LEFT_PARENTHESIS  &kp LT     &trans  &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RIGHT_SHIFT MINUS  &none      &none      &none      &trans
-&trans  &kp SQT                      &kp RBKT                        &kp RBRC                  &kp RPAR                          &kp GT                     &trans      &trans                  &kp BSLH   &kp UNDER               &kp PLUS   &kp PIPE   &kp QMARK  &trans
-&trans  &trans                       &trans                          &trans                    &trans                                       &trans  &trans  &trans      &trans  &trans  &trans             &trans                  &trans     &trans     &trans     &trans
+&trans  &trans                       &trans                          &trans                    &trans                            &trans     &trans                                      &trans  &trans     &trans                  &trans                    &trans                    &trans                &trans
+&trans  &kp EXCL                     &kp AT                          &kp HASH                  &kp DLLR                          &kp PRCNT  &trans                                      &trans  &kp CARET  &kp AMPS                &kp ASTRK                 &kp GRAVE                 &kp TILDE             &trans
+&trans  &hml LEFT_ALT DOUBLE_QUOTES  &hml LEFT_CONTROL LEFT_BRACKET  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_SHIFT LEFT_PARENTHESIS  &kp LT     &trans  &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RIGHT_SHIFT MINUS  &hmr RIGHT_COMMAND EQUAL  &hmr RIGHT_CONTROL COLON  &hmr RIGHT_ALT ENTER  &trans
+&trans  &kp SQT                      &kp RBKT                        &kp RBRC                  &kp RPAR                          &kp GT                     &trans      &trans                  &kp BSLH   &kp UNDER               &kp PLUS                  &kp PIPE                  &kp QMARK             &trans
+&trans  &trans                       &trans                          &trans                    &trans                                       &trans  &trans  &trans      &trans  &trans  &trans             &trans                  &trans                    &trans                    &trans                &trans
             >;
         };
 
