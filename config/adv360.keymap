@@ -74,11 +74,11 @@
 
         right_layer {
             bindings = <
-&trans  &trans            &trans                &trans            &trans              &trans  &trans                                      &trans  &trans     &trans                 &trans                       &trans                  &trans              &trans
-&trans  &none             &none                 &none             &none               &none   &trans                                      &trans  &kp PG_UP  &kp INSERT             &none                        &kp PRINTSCREEN         &trans              &trans
-&trans  &hml LEFT_ALT N1  &hml LEFT_CONTROL N2  &hml LEFT_GUI N3  &hml LEFT_SHIFT N4  &kp N5  &trans  &trans  &trans      &trans  &trans  &none   &kp PG_DN  &hmr RIGHT_SHIFT HOME  &hmr RIGHT_COMMAND UP_ARROW  &hmr RIGHT_CONTROL END  &hmr RIGHT_ALT DEL  &trans
-&trans  &kp N6            &kp N7                &kp N8            &kp N9              &kp N0                  &trans      &trans                  &none      &kp LEFT_ARROW         &kp DOWN_ARROW               &kp RIGHT_ARROW         &none               &trans
-&trans  &trans            &trans                &trans            &trans                      &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans                       &trans                  &trans              &to GME
+&trans  &trans        &trans                &trans            &trans              &trans  &trans                                      &trans  &trans     &trans                 &trans                       &trans                  &trans              &trans
+&trans  &none         &kp N7                &kp N8            &kp N9              &none   &trans                                      &trans  &kp PG_UP  &kp INSERT             &none                        &kp PRINTSCREEN         &trans              &trans
+&trans  &kp LEFT_ALT  &hml LEFT_CONTROL N4  &hml LEFT_GUI N5  &hml LEFT_SHIFT N6  &kp N0  &trans  &trans  &trans      &trans  &trans  &none   &kp PG_DN  &hmr RIGHT_SHIFT HOME  &hmr RIGHT_COMMAND UP_ARROW  &hmr RIGHT_CONTROL END  &hmr RIGHT_ALT DEL  &trans
+&trans  &none         &kp N1                &kp N2            &kp N3              &none                   &trans      &trans                  &none      &kp LEFT_ARROW         &kp DOWN_ARROW               &kp RIGHT_ARROW         &none               &trans
+&trans  &trans        &trans                &trans            &trans                      &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans                       &trans                  &trans              &to GME
             >;
         };
 
