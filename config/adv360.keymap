@@ -55,41 +55,41 @@
 
         default_layer {
             bindings = <
-&none  &kp N1           &kp N2        &kp N3           &kp N4             &kp N5  &none                                                     &none      &kp N6  &kp N7              &kp N8            &kp N9                &kp N0                    &to SUD
-&none  &kp Q            &kp W         &kp E            &kp R              &kp T   &none                                                     &none      &kp Y   &kp U               &kp I             &kp O                 &kp P                     &to WIN
-&none  &hml LEFT_ALT A  &hml LCTRL S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G   &none  &none        &none      &none      &none           &none      &kp H   &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_CONTROL L  &hmr RIGHT_ALT BACKSPACE  &none
-&none  &kp Z            &kp X         &kp C            &kp V              &kp B                       &none      &none                                 &kp N   &kp M               &kp COMMA         &kp DOT               &kp RALT                  &none
-&none  &none            &none         &none            &none                      &none  &lt LEF TAB  &none      &kp ENTER  &lt RIG ESCAPE  &kp SPACE          &none               &none             &none                 &none                     &none
+&none  &kp N1  &kp N2           &kp N3               &kp N4       &kp N5  &none                                                      &none      &kp N6  &kp N7       &kp N8                &kp N9            &kp N0         &to 6
+&none  &kp Q   &kp W            &kp E                &kp R        &kp T   &none                                                      &none      &kp Y   &kp U        &kp I                 &kp O             &kp P          &to 1
+&none  &kp A   &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LGUI F  &kp G   &none           &none      &none      &none  &none         &none      &kp H   &hmr RGUI J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &kp BACKSPACE  &none
+&none  &kp Z   &kp X            &kp C                &kp V        &kp B                              &none      &none                           &kp N   &kp M        &kp COMMA             &kp DOT           &kp RALT       &none
+&none  &none   &none            &none                &none                &kp LEFT_SHIFT  &lt 3 TAB  &none      &none  &lt 2 ESCAPE  &kp SPACE          &none        &none                 &none             &none          &none
             >;
         };
 
         windows_layer {
             bindings = <
-&trans  &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &trans
-&trans  &trans  &trans           &trans               &trans  &trans  &trans                                         &trans  &trans  &trans  &trans                &trans            &trans  &to MAC
-&none   &trans  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &trans  &trans
-&trans  &trans  &trans           &trans               &trans  &trans                     &trans      &trans                  &trans  &trans  &trans                &trans            &trans  &trans
-&trans  &trans  &trans           &trans               &trans          &kp LCTRL  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans            &trans  &none
+&trans  &trans  &trans  &trans       &trans               &trans  &trans                                      &trans  &trans  &trans                &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans               &trans  &trans                                      &trans  &trans  &trans                &trans       &trans  &trans  &to 0
+&none   &trans  &trans  &hml LGUI D  &hml LEFT_CONTROL F  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &hmr RIGHT_CONTROL J  &hmr RGUI K  &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans               &trans                  &trans      &trans                  &trans  &trans                &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans                       &trans  &trans  &trans      &trans  &trans  &trans          &trans                &trans       &trans  &trans  &none
             >;
         };
 
         right_layer {
             bindings = <
-&trans  &trans        &trans                &trans            &trans              &trans      &trans                                      &bootloader  &trans     &trans                 &trans                       &trans                  &trans              &trans
-&trans  &none         &kp N7                &kp N8            &kp N9              &none       &trans                                      &trans       &kp PG_UP  &kp INSERT             &none                        &kp PRINTSCREEN         &trans              &trans
-&trans  &kp LEFT_ALT  &hml LEFT_CONTROL N4  &hml LEFT_GUI N5  &hml LEFT_SHIFT N6  &kp N0      &trans  &trans  &trans      &trans  &trans  &none        &kp PG_DN  &hmr RIGHT_SHIFT HOME  &hmr RIGHT_COMMAND UP_ARROW  &hmr RIGHT_CONTROL END  &hmr RIGHT_ALT DEL  &trans
-&trans  &none         &kp N1                &kp N2            &kp N3              &kp PERIOD                  &trans      &trans                       &none      &kp LEFT_ARROW         &kp DOWN_ARROW               &kp RIGHT_ARROW         &none               &trans
-&trans  &trans        &trans                &trans            &trans                          &trans  &trans  &trans      &trans  &trans  &trans                  &trans                 &trans                       &trans                  &trans              &to GME
+&trans  &trans  &trans            &trans                &trans        &trans      &trans                                      &bootloader  &trans     &trans          &trans                       &trans              &trans  &trans
+&trans  &none   &kp N7            &kp N8                &kp N9        &none       &trans                                      &trans       &kp PG_UP  &kp INSERT      &none                        &kp PRINTSCREEN     &trans  &trans
+&trans  &none   &hml LEFT_ALT N4  &hml LEFT_CONTROL N5  &hml LGUI N6  &kp N0      &trans  &trans  &trans      &trans  &trans  &none        &kp PG_DN  &hmr RGUI HOME  &hmr RIGHT_CONTROL UP_ARROW  &hmr RIGHT_ALT END  &trans  &trans
+&trans  &none   &kp N1            &kp N2                &kp N3        &kp PERIOD                  &trans      &trans                       &none      &kp LEFT_ARROW  &kp DOWN_ARROW               &kp RIGHT_ARROW     &none   &trans
+&trans  &trans  &trans            &trans                &trans                    &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans                       &trans              &trans  &to 5
             >;
         };
 
         left_layer {
             bindings = <
-&trans  &trans                       &trans                          &trans                    &trans                            &trans     &bootloader                                      &none   &trans     &trans                  &trans                    &trans                    &trans                &trans
-&trans  &kp EXCL                     &kp AT                          &kp HASH                  &kp DLLR                          &kp PRCNT  &trans                                           &trans  &kp CARET  &kp AMPS                &kp ASTRK                 &kp GRAVE                 &kp TILDE             &trans
-&trans  &hml LEFT_ALT DOUBLE_QUOTES  &hml LEFT_CONTROL LEFT_BRACKET  &hml LEFT_GUI LEFT_BRACE  &hml LEFT_SHIFT LEFT_PARENTHESIS  &kp LT     &trans       &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RIGHT_SHIFT MINUS  &hmr RIGHT_COMMAND EQUAL  &hmr RIGHT_CONTROL COLON  &hmr RIGHT_ALT ENTER  &trans
-&trans  &kp SQT                      &kp RBKT                        &kp RBRC                  &kp RPAR                          &kp GT                          &trans      &trans                  &kp BSLH   &kp UNDER               &kp PLUS                  &kp PIPE                  &kp QMARK             &trans
-&trans  &trans                       &trans                          &trans                    &trans                                       &trans       &trans  &trans      &trans  &trans  &trans             &trans                  &trans                    &trans                    &trans                &trans
+&trans  &trans             &trans                      &trans                            &trans                      &trans     &bootloader                                      &none   &trans     &trans           &trans                &trans                    &trans     &trans
+&trans  &kp EXCL           &kp AT                      &kp HASH                          &kp DLLR                    &kp PRCNT  &trans                                           &trans  &kp CARET  &kp AMPS         &kp ASTRK             &kp GRAVE                 &kp TILDE  &trans
+&trans  &kp DOUBLE_QUOTES  &hml LEFT_ALT LEFT_BRACKET  &hml LS(LEFT_CONTROL) LEFT_BRACE  &hml LGUI LEFT_PARENTHESIS  &kp LT     &trans       &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RGUI MINUS  &hmr RIGHT_ALT EQUAL  &hmr RIGHT_CONTROL COLON  &kp ENTER  &trans
+&trans  &kp SQT            &kp RBKT                    &kp RBRC                          &kp RPAR                    &kp GT                          &trans      &trans                  &kp BSLH   &kp UNDER        &kp PLUS              &kp PIPE                  &kp QMARK  &trans
+&trans  &trans             &trans                      &trans                            &trans                                 &trans       &trans  &trans      &trans  &trans  &trans             &trans           &trans                &trans                    &trans     &trans
             >;
         };
 
@@ -119,7 +119,7 @@
 &none  &none  &kp N7  &kp N8  &kp N9  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans  &to 0
 &none  &none  &kp N4  &kp N5  &kp N6  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &none  &none  &kp N1  &kp N2  &kp N3  &trans                        &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none  &none   &none   &none           &kp LSHFT  &kp LCTRL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &to MAC
+&none  &none  &none   &none   &none           &kp LSHFT  &kp LCTRL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &to 0
             >;
         };
     };
