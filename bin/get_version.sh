@@ -1,22 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Get the date, first 4 chars of branch name and short commit hash
 date=$(date -u +"%Y%m%d")
 branch=${1:-$(git rev-parse --abbrev-ref HEAD | cut -c1-4)}
 commit=${2:-$(git rev-parse --short HEAD)}
 
-uppercase_char() {
-    local char=$1
-
-    (echo $char | tr '[a-z]' '[A-Z]' 2> /dev/null) || echo "${char^^}"
-}
-
 # Function to transform characters to ZMK key behaviours
 transform_char() {
     local char=$1
-
     if [[ $char =~ [A-Za-z] ]]; then
-        echo "<&kp $(uppercase_char $char)>, "
+        echo "<&kp ${char^^}>, "
     elif [[ $char =~ [0-9] ]]; then
         echo "<&kp N${char}>, "
     elif [ "$char" = "." ]; then
