@@ -76,11 +76,11 @@
 
         right_layer {
             bindings = <
-&trans  &trans        &trans            &trans                &trans        &trans      &trans                                      &bootloader  &trans     &trans          &trans                       &trans              &trans  &trans
-&trans  &kp CAPSLOCK  &kp N7            &kp N8                &kp N9        &none       &trans                                      &trans       &kp PG_UP  &kp INSERT      &none                        &kp PRINTSCREEN     &trans  &trans
-&trans  &none         &hml LEFT_ALT N4  &hml LEFT_CONTROL N5  &hml LGUI N6  &kp N0      &trans  &trans  &trans      &trans  &trans  &none        &kp PG_DN  &hmr RGUI HOME  &hmr RIGHT_CONTROL UP_ARROW  &hmr RIGHT_ALT END  &trans  &trans
-&trans  &none         &kp N1            &kp N2                &kp N3        &kp PERIOD                  &trans      &trans                       &none      &kp LEFT_ARROW  &kp DOWN_ARROW               &kp RIGHT_ARROW     &none   &trans
-&trans  &trans        &trans            &trans                &trans                    &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans                       &trans              &trans  &to 5
+&trans  &trans        &trans            &trans                &trans        &trans      &trans                                      &bootloader  &trans         &trans          &trans                       &trans              &trans  &trans
+&trans  &kp CAPSLOCK  &kp N7            &kp N8                &kp N9        &none       &trans                                      &trans       &kp PG_UP      &kp INSERT      &none                        &kp PRINTSCREEN     &trans  &trans
+&trans  &none         &hml LEFT_ALT N4  &hml LEFT_CONTROL N5  &hml LGUI N6  &kp N0      &trans  &trans  &trans      &trans  &trans  &none        &kp PG_DN      &hmr RGUI HOME  &hmr RIGHT_CONTROL UP_ARROW  &hmr RIGHT_ALT END  &trans  &trans
+&trans  &none         &kp N1            &kp N2                &kp N3        &kp PERIOD                  &trans      &trans                       &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW               &kp RIGHT_ARROW     &none   &trans
+&trans  &trans        &trans            &trans                &trans                    &trans  &trans  &trans      &trans  &trans  &trans                      &trans          &trans                       &trans              &trans  &to 5
             >;
         };
 
