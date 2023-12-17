@@ -10,7 +10,6 @@
 #define TRI 4
 #define GME 5
 #define SUD 6
-
 #define MAC 0
 #define WIN 1
 #define RIG 2
@@ -20,16 +19,18 @@
 
 / {
     behaviors {
-      #include "macros.dtsi"
+        #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
-      macro_ver: macro_ver {
-        compatible = "zmk,behavior-macro";
-        label = "macro_version";
-        #binding-cells = <0>;
-        bindings = <&kp RET>;
-      };
-      #endif
+
+        macro_ver: macro_ver {
+            compatible = "zmk,behavior-macro";
+            label = "macro_version";
+            #binding-cells = <0>;
+            bindings = <&kp RET>;
+        };
+
+        #endif
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
@@ -69,6 +70,9 @@
         };
     };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -104,11 +108,11 @@
 
         left_layer {
             bindings = <
-&trans  &trans             &trans                      &trans                            &trans                      &trans     &bootloader                                      &none   &trans     &trans           &trans                &trans                    &trans     &trans
-&trans  &kp EXCL           &kp AT                      &kp HASH                          &kp DLLR                    &kp PRCNT  &trans                                           &trans  &kp CARET  &kp AMPS         &kp ASTRK             &kp GRAVE                 &kp TILDE  &trans
-&trans  &kp DOUBLE_QUOTES  &hml LEFT_ALT LEFT_BRACKET  &hml LS(LEFT_CONTROL) LEFT_BRACE  &hml LGUI LEFT_PARENTHESIS  &kp LT     &trans       &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RGUI MINUS  &hmr RIGHT_ALT EQUAL  &hmr RIGHT_CONTROL COLON  &kp ENTER  &trans
-&trans  &kp SQT            &kp RBKT                    &kp RBRC                          &kp RPAR                    &kp GT                          &trans      &trans                  &kp BSLH   &kp UNDER        &kp PLUS              &kp PIPE                  &kp QMARK  &trans
-&trans  &trans             &trans                      &trans                            &trans                                 &trans       &trans  &trans      &trans  &trans  &trans             &trans           &trans                &trans                    &trans     &trans
+&trans  &trans             &trans                      &trans                                  &trans                &trans     &bootloader                                      &none   &trans     &trans           &trans                &trans                    &trans     &trans
+&trans  &kp EXCL           &kp AT                      &kp HASH                                &kp DLLR              &kp PRCNT  &trans                                           &trans  &kp CARET  &kp AMPS         &kp ASTRK             &kp GRAVE                 &kp TILDE  &trans
+&trans  &kp DOUBLE_QUOTES  &hml LEFT_ALT LEFT_BRACKET  &hml LS(LEFT_CONTROL) LEFT_PARENTHESIS  &hml LGUI LEFT_BRACE  &kp LT     &trans       &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RGUI MINUS  &hmr RIGHT_ALT EQUAL  &hmr RIGHT_CONTROL COLON  &kp ENTER  &trans
+&trans  &kp SQT            &kp RBKT                    &kp RIGHT_PARENTHESIS                   &kp RIGHT_BRACE       &kp GT                          &trans      &trans                  &kp BSLH   &kp UNDER        &kp PLUS              &kp PIPE                  &kp QMARK  &trans
+&trans  &trans             &trans                      &trans                                  &trans                           &trans       &trans  &trans      &trans  &trans  &trans             &trans           &trans                &trans                    &trans     &trans
             >;
         };
 
