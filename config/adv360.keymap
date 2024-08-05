@@ -38,12 +38,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
 
         hml: hml {
@@ -52,12 +52,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75 35 36 37 38 52 53 66 67 68 69 65>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -129,7 +129,7 @@
         game_layer {
             bindings = <
 &kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &none                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
 &kp ESC    &kp LSHIFT  &kp A     &kp S     &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LALT   &kp LCTRL   &kp Z     &kp X     &kp C   &kp V                       &kp H      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &none      &none       &kp CAPS  &kp LEFT  &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
