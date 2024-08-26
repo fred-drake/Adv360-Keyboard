@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Get the date, first 4 chars of branch name and short commit hash
 date=$(date -u +"%Y%m%d")
