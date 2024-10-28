@@ -82,7 +82,7 @@
 &none  &kp Q   &kp W            &kp E                &kp R        &kp T   &none                                                              &none      &kp Y   &kp U        &kp I                 &kp O             &kp P          &none
 &none  &kp A   &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LGUI F  &kp G   &none           &none      &none      &none          &none         &none      &kp H   &hmr RGUI J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &kp BACKSPACE  &none
 &none  &kp Z   &kp X            &kp C                &kp V        &kp B                              &none      &none                                   &kp N   &kp M        &kp COMMA             &kp DOT           &none          &none
-&none  &none   &none            &none                &none                &kp LEFT_SHIFT  &lt 3 TAB  &none      &kp SEMICOLON  &lt 2 ESCAPE  &kp SPACE          &none        &none                 &none             &none          &none
+&none  &none   &none            &none                &none                &kp LEFT_SHIFT  &lt 3 TAB  &none      &kp SEMICOLON  &lt 2 ESCAPE  &kp SPACE          &none        &none                 &none             &none          &to 5
             >;
         };
 
@@ -112,7 +112,7 @@
 &trans  &kp EXCL           &kp AT                      &kp HASH                                &kp DLLR              &kp PRCNT  &trans                                           &trans  &kp CARET  &kp AMPS         &kp ASTRK             &kp GRAVE                 &kp TILDE  &trans
 &trans  &kp DOUBLE_QUOTES  &hml LEFT_ALT LEFT_BRACKET  &hml LS(LEFT_CONTROL) LEFT_PARENTHESIS  &hml LGUI LEFT_BRACE  &kp LT     &trans       &trans  &trans      &trans  &trans  &trans  &kp FSLH   &hmr RGUI MINUS  &hmr RIGHT_ALT EQUAL  &hmr RIGHT_CONTROL COLON  &kp ENTER  &trans
 &trans  &kp SQT            &kp RBKT                    &kp RIGHT_PARENTHESIS                   &kp RIGHT_BRACE       &kp GT                          &trans      &trans                  &kp BSLH   &kp UNDER        &kp PLUS              &kp PIPE                  &kp QMARK  &trans
-&trans  &trans             &trans                      &trans                                  &trans                           &trans       &trans  &trans      &trans  &trans  &trans             &trans           &trans                &trans                    &trans     &to 1
+&trans  &trans             &trans                      &trans                                  &trans                           &trans       &trans  &trans      &trans  &trans  &trans             &trans           &trans                &trans                    &trans     &trans
             >;
         };
 
@@ -128,11 +128,11 @@
 
         game_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2    &kp N3    &kp N4  &kp N5  &none                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp TAB     &kp Q     &kp W     &kp E   &kp R   &kp T                                          &trans  &trans  &trans  &trans  &trans  &trans  &to 0
-&kp ESC    &kp LSHIFT  &kp A     &kp S     &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LALT   &kp LCTRL   &kp Z     &kp X     &kp C   &kp V                       &kp H      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&none      &none       &kp CAPS  &kp LEFT  &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp N1      &kp N2    &kp N3  &kp N4  &kp N5  &none                                          &trans  &trans  &trans    &trans          &trans           &trans  &trans
+&kp TAB    &kp H       &kp Q     &kp W   &kp E   &kp R   &kp T                                          &trans  &trans  &trans    &trans          &trans           &trans  &to 0
+&kp ESC    &kp LSHIFT  &kp A     &kp S   &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans    &kp UP_ARROW    &trans           &trans  &trans
+&kp LALT   &kp LCTRL   &kp Z     &kp X   &kp C   &kp V                       &kp H      &trans                  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&none      &none       &kp CAPS  &none   &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans          &trans    &trans          &trans           &trans  &trans
             >;
         };
 
