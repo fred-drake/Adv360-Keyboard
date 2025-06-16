@@ -118,11 +118,11 @@
 
         game_layer {
             bindings = <
-&kp EQUAL  &kp N1      &kp N2    &kp N3  &kp N4  &kp N5  &none                                          &trans  &trans  &trans    &trans          &trans           &trans  &trans
-&kp TAB    &kp H       &kp Q     &kp W   &kp E   &kp R   &kp T                                          &trans  &trans  &trans    &trans          &trans           &trans  &to 0
-&kp ESC    &kp LSHIFT  &kp A     &kp S   &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &trans  &trans    &kp UP_ARROW    &trans           &trans  &trans
-&kp LALT   &kp LCTRL   &kp Z     &kp X   &kp C   &kp V                       &kp H      &trans                  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&none      &none       &kp CAPS  &none   &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans          &trans    &trans          &trans           &trans  &trans
+&kp EQUAL  &kp N1      &kp N2    &kp N3  &kp N4  &kp N5  &none                                          &trans  &trans         &trans    &trans          &trans           &trans  &trans
+&kp TAB    &kp H       &kp Q     &kp W   &kp E   &kp R   &kp T                                          &trans  &trans         &trans    &trans          &trans           &trans  &to 0
+&kp ESC    &kp LSHIFT  &kp A     &kp S   &kp D   &kp F   &kp G      &kp M    &kp I      &trans  &trans  &trans  &kp PAGE_UP    &trans    &kp UP_ARROW    &trans           &trans  &trans
+&kp LALT   &kp LCTRL   &kp Z     &kp X   &kp C   &kp V                       &kp H      &trans                  &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&none      &none       &kp CAPS  &none   &kp B           &kp SPACE  &kp TAB  &kp Y      &trans  &trans  &trans                 &trans    &trans          &trans           &trans  &trans
             >;
         };
 
